@@ -1,0 +1,52 @@
+.Menu {
+  $primary-color: #525dce;
+  $primary-background: #222;
+  background-color: $primary-background;
+  flex-direction: column;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    justify-content: center;
+  }
+
+  li {
+    margin: 10px 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a,
+  a:visited {
+    color: #ffffff;
+  }
+
+  a:hover {
+    color: $primary-color;
+  }
+
+  #compose {
+    color: white;
+  }
+
+  button {
+    background-color: #1899fe;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50px;
+    line-height: 6px;
+  }
+
+  button:hover {
+    background-color: $primary-color;
+  }
+}
