@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
 import './List.scss';
 import axios from 'axios';
-import Lorem from 'react-lorem-component'
+import Lorem from 'react-lorem-component';
+
 
 export default class Sender extends Component {
-  state = {
-    users: [],
-    isLoading: true,
-    errors: null
-  };
+
+  constructor(){
+    super();
+
+    this.state = {
+      users: [],
+      isLoading: true,
+      errors: null
+    };
+  }
 
   getUsers() {
     // We're using axios instead of Fetch
     axios
       // The API we're requesting data from
-      .get('https://randomuser.me/api/?results=5')
+      .get('https://randomuser.me/api/?results=6')
       // Once we get a response, we'll map the API endpoints to our props
-      .then(response =>
-        response.data.results.map(user => ({
+      .then(res =>
+        res.data.results.map(user => ({
           name: `${user.name.first} ${user.name.last}`,
           username: `${user.login.username}`,
           image: `${user.picture.thumbnail}`

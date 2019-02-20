@@ -7,8 +7,8 @@ export default class Header extends Component {
     return (
       <div className="Header">
         <div className="firstPart">
-          <h1>TITLE</h1>
-          <p>From <span className="userTitle"> user.name </span> <span className="dateText">at 3:56pm, April 3, 2012</span></p>
+          <h1 className="title">TITLE</h1>
+          <p className="subtitle">From <span className="userTitle"> user.name </span> <span className="dateText">at 3:56pm, April 3, 2012</span></p>
         </div>
         <div className="secondPart">
           <button className="btn success">Reply</button>

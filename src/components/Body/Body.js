@@ -12,7 +12,8 @@ export default class Body extends Component {
         </div>
         <div className="sign">
           <p>Regards,</p>
-          user.name
+            user.name
+           
         </div>
       </div>
     );
