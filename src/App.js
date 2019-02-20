@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Menu from './LeftNav/Menu';
+import Menu from './components/LeftNav/Menu';
+import List from './components/Inbox/List';
 
 const links = [
   { id: 1, label: 'Inbox (2)', to: '' },
@@ -13,8 +14,9 @@ const links = [
 class App extends React.Component {
   render() {
     return (
-      <div className='App'>
+      <div className='rowC'>
         <Menu links={links} />
+        <List />
       </div>
     );
   }

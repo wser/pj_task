@@ -2,7 +2,7 @@
   $primary-color: #525dce;
   $primary-background: #242a3a;
   background-color: $primary-background;
-  flex-direction: column;
+  width: 25%;
 
   ul {
     list-style: none;
@@ -27,10 +27,6 @@
 
   a:hover {
     color: $primary-color;
-  }
-
-  #compose {
-    color: white;
   }
 
   button {

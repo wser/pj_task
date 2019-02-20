@@ -8,15 +8,21 @@ const Labels = () => (
     <ul>
       <li>
         <input type='checkbox' id='checkbox-1' />
-        <a className='labelItem'>Personal</a>
+        <a href='#' className='labelItem'>
+          Personal
+        </a>
       </li>
       <li>
         <input type='checkbox' id='checkbox-2' />
-        <a className='labelItem'>Work</a>
+        <a href='#' className='labelItem'>
+          Work
+        </a>
       </li>
       <li>
         <input type='checkbox' id='checkbox-3' />
-        <a className='labelItem'>Travel</a>
+        <a href='#' className='labelItem'>
+          Travel
+        </a>
       </li>
     </ul>
   </div>
