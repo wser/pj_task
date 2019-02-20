@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Menu.scss';
+//import './Menu.scss';
 
 const Labels = () => (
   <div className='Labels'>

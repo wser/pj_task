@@ -4,7 +4,7 @@ import './Menu.scss';
 import Labels from './Labels';
 
 const Menu = ({ links }) => (
-  <div className='Menu columns'>
+  <div className='Menu'>
     <button id='compose'>Compose</button>
     <ul>
       {links.map(link => (

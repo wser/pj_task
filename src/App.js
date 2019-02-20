@@ -1,7 +1,9 @@
 import React from 'react';
+import './App.scss';
 
 import Menu from './components/LeftNav/Menu';
 import List from './components/Inbox/List';
+import Body from './components/Body/Body';
 
 const links = [
   { id: 1, label: 'Inbox (2)', to: '' },
@@ -14,9 +16,10 @@ const links = [
 class App extends React.Component {
   render() {
     return (
-      <div className='rowC'>
+      <div className='App'>
         <Menu links={links} />
         <List />
+        <Body />
       </div>
     );
   }

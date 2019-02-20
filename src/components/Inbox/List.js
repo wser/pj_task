@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-
+import Sender from './Sender';
 export default class List extends Component {
   render() {
     return (
       <div className='List'>
-        <h2>list</h2>
+        <Sender />
+        <Sender />
+        <Sender />
+        <Sender />
+        <Sender />
+        <Sender />
+        <Sender />
       </div>
     );
   }
