@@ -20,7 +20,6 @@ export default class Sender extends Component {
         response.data.results.map(user => ({
           name: `${user.name.first} ${user.name.last}`,
           username: `${user.login.username}`,
-          email: `${user.email}`,
           image: `${user.picture.thumbnail}`
         }))
       )
@@ -43,10 +42,10 @@ export default class Sender extends Component {
     const { isLoading, users } = this.state;
     return (
       <React.Fragment>
-        <div>
+        <div className="fullElement">
           {!isLoading ? (
             users.map(user => {
-              const { username, name, email, image } = user;
+              const { username, name, image } = user;
               return (
                 <div key={username} className='Sender'>
                   <div className='picture'>
@@ -55,7 +54,7 @@ export default class Sender extends Component {
                   <div className='info'>
                     <p className='name'>{name.toUpperCase()}</p>
                     <p className='title'>{username.charAt(0).toUpperCase() + username.slice(1)}</p>
-                    <Lorem count='1' seed='2' sentenceLowerBound="1" sentenceUpperBound="3"/>
+                    <Lorem count='1' seed="4" sentenceLowerBound="1" sentenceUpperBound="3"/>
                   </div>
                 </div>
               );

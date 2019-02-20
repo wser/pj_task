@@ -1,5 +1,13 @@
 .List {
   display: flex;
+  min-width: 300px;
+}
+
+.fullElement {
+  :hover {
+    background-color: gray;
+  }
+
 }
 
 .Sender {
@@ -9,6 +17,7 @@
   border-right: 1px solid gray;
   max-width: 300px;
 
+  
   .picture {
     padding: 10px;
     left: 1px;
@@ -27,9 +36,21 @@
   .info {
     padding: 5px;
   }
-  p {
-    word-break: break-all ;
+
+}
+
+@media screen and (max-width: 600px){
+  .List {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    align-items: center;
+    background-color: #65A6D5;
   }
 
-
+  .Sender{
+    border:0;
+  }
 }

@@ -1,0 +1,85 @@
+.Header {
+  padding:20px;
+  line-height: 12px;
+  display: flex;
+  flex-direction: row;
+  height: 14%;
+  border-bottom: 1px solid gray;
+ 
+  .dateText{
+    color: gray;
+  }
+
+  .userTitle {
+    color:#65A6D5;
+  }
+
+  .firstPart{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+  }
+
+  .secondPart{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .btn {
+    border: 2px solid gray;
+    background-color: white;
+    color: gray;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    height:50px;
+    margin: 5px;
+  }
+
+  /* Green */
+  .success {
+    border-color: #gray;
+    color: gray;
+  }
+
+  .success:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* Blue */
+  .info {
+    border-color: gray;
+    color: gray;
+  }
+
+  .info:hover {
+    background: #2196F3;
+    color: white;
+  }
+
+  /* Orange */
+  .warning {
+    border-color: gray;
+    color: gray;
+  }
+
+  .warning:hover {
+    background: #ff9800;
+    color: white;
+  }
+}
+
+.Body {
+  padding:20px;
+}
+
+.sign {
+  margin-top:-50px;
+  padding: 20px;
+  line-height: 10px;
+}

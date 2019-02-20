@@ -17,9 +17,9 @@ class App extends React.Component {
   render() {
     return (
       <div className='App'>
-        <Menu links={links} />
-        <List />
-        <Body />
+        <Menu links={links} className="Menu"/>
+        <List className="List"/>
+        <Body className="Body" />
       </div>
     );
   }
