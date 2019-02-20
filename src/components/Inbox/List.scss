@@ -7,17 +7,29 @@
   flex-direction: row;
   border-bottom: 1px solid gray;
   border-right: 1px solid gray;
+  max-width: 300px;
 
   .picture {
     padding: 10px;
     left: 1px;
   }
+  
+  .name {
+    color:#AEAEAE;
+    margin:0;
+  }
+
+  .title {
+    margin:0;
+    font-weight: bold;
+  }
 
   .info {
     padding: 5px;
   }
-
-  .name {
-    font-weight: bold;
+  p {
+    word-break: break-all ;
   }
+
+
 }

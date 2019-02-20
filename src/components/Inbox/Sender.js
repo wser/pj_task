@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './List.scss';
 import axios from 'axios';
+import Lorem from 'react-lorem-component'
 
 export default class Sender extends Component {
   state = {
@@ -52,9 +53,9 @@ export default class Sender extends Component {
                     <img src={image} alt={name} />
                   </div>
                   <div className='info'>
-                    <p className='name'>{name}</p>
-                    <p className='title'>{email}</p>
-                    <p>sfsdfg sdfg sdfgsfdgsdf sdfgthjetzjhwrfdsdfgsd</p>
+                    <p className='name'>{name.toUpperCase()}</p>
+                    <p className='title'>{username.charAt(0).toUpperCase() + username.slice(1)}</p>
+                    <Lorem count='1' seed='2' sentenceLowerBound="1" sentenceUpperBound="3"/>
                   </div>
                 </div>
               );
