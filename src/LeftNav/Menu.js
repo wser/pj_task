@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './Menu.scss';
+import Labels from './Labels';
 
 const Menu = ({ links }) => (
   <div className='Menu'>
@@ -12,6 +13,7 @@ const Menu = ({ links }) => (
         </li>
       ))}
     </ul>
+    <Labels />
   </div>
 );
 

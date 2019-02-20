@@ -1,6 +1,6 @@
 .Menu {
   $primary-color: #525dce;
-  $primary-background: #222;
+  $primary-background: #242a3a;
   background-color: $primary-background;
   flex-direction: column;
 
@@ -48,5 +48,41 @@
 
   button:hover {
     background-color: $primary-color;
+  }
+
+  .title {
+    color: #61728c;
+  }
+
+  #checkbox-1 {
+    background-color: #ffcc45;
+    -webkit-appearance: none;
+    padding: 8px;
+    border-radius: 3px;
+    position: relative;
+    padding: 8px;
+    top: 5px;
+  }
+  #checkbox-2 {
+    background-color: #45d1b7;
+    -webkit-appearance: none;
+    padding: 8px;
+    border-radius: 3px;
+    position: relative;
+    padding: 8px;
+    top: 5px;
+  }
+  #checkbox-3 {
+    background-color: #47c05f;
+    -webkit-appearance: none;
+    padding: 8px;
+    border-radius: 3px;
+    position: relative;
+    padding: 8px;
+    top: 5px;
+  }
+
+  .labelItem {
+    padding: 5px;
   }
 }
