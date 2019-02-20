@@ -5,12 +5,6 @@ export default class List extends Component {
     return (
       <div className='List'>
         <Sender />
-        <Sender />
-        <Sender />
-        <Sender />
-        <Sender />
-        <Sender />
-        <Sender />
       </div>
     );
   }
