@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './List.scss';
 import axios from 'axios';
 
 export default class Sender extends Component {
@@ -46,13 +47,15 @@ export default class Sender extends Component {
             users.map(user => {
               const { username, name, email, image } = user;
               return (
-                <div key={username}>
-                  <p>{name}</p>
-                  <div>
+                <div key={username} className='Sender'>
+                  <div className='picture'>
                     <img src={image} alt={name} />
                   </div>
-                  <p>{email}</p>
-                  <hr />
+                  <div className='info'>
+                    <p className='name'>{name}</p>
+                    <p className='title'>{email}</p>
+                    <p>sfsdfg sdfg sdfgsfdgsdf sdfgthjetzjhwrfdsdfgsd</p>
+                  </div>
                 </div>
               );
             })
